@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 14:15:39 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/18 22:16:08 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/18 23:40:47 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 class Fixed {
     private:
-        int                 point;
+        int                 value;
         static const int    bits;
 
     public:
