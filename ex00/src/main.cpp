@@ -6,12 +6,11 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 14:15:53 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/18 22:15:24 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/18 22:34:31 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Fixed.hpp"
-#include <iostream>
 
 int main( void ) {
     Fixed a;
