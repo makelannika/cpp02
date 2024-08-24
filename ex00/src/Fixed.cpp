@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 14:15:47 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/18 23:42:26 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/25 02:12:31 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Fixed::Fixed() : value(0) {
 
 Fixed::Fixed(const Fixed& obj) {
     std::cout << "Copy constructor called" << std::endl;
-    operator=(obj);
+    *this = obj;
 }
 
 Fixed& Fixed::operator=(const Fixed& obj) {
