@@ -6,15 +6,15 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 14:15:53 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/18 22:34:31 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/26 00:45:12 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Fixed.hpp"
 
-int main( void ) {
+int main(void) {
     Fixed a;
-    Fixed b( a );
+    Fixed b(a);
     Fixed c;
     c = b;
     std::cout << a.getRawBits() << std::endl;

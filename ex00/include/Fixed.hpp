@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 14:15:39 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/18 23:40:47 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/26 00:44:41 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ class Fixed {
         Fixed();
         ~Fixed();
 
-        Fixed( const Fixed& obj );
-        Fixed& operator=( const Fixed& obj );
+        Fixed(const Fixed& obj);
+        Fixed& operator=(const Fixed& obj);
 
         int     getRawBits() const;
-        void    setRawBits( int const raw );
+        void    setRawBits(int const raw);
 };
 
 #endif
