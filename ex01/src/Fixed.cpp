@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 22:37:30 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/25 02:11:40 by amakela          ###   ########.fr       */
+/*   Updated: 2024/08/26 00:41:40 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ Fixed::Fixed() : value(0) {
     std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed( const int value ) {
+Fixed::Fixed(const int value) {
     std::cout << "Int constructor called" << std::endl;
-    this -> value = value << this -> frac_bits;
+    this->value = value << frac_bits;
 }
 
-Fixed::Fixed( const float value ) {
+Fixed::Fixed(const float value) {
     std::cout << "Float constructor called" << std::endl;
-    this -> value = roundf(value * (1 << this -> frac_bits));
+    this->value = roundf(value * (1 << frac_bits));
 }
 
 Fixed::Fixed(const Fixed& obj) {
@@ -47,20 +47,20 @@ Fixed::~Fixed() {
 
 int Fixed::getRawBits() const {
     std::cout << "getRawBits member function called" << std::endl;
-    return (this -> value);
+    return (value);
 }
 
 void    Fixed::setRawBits(int const raw) {
     std::cout << "setRawBits member function called" << std::endl;
-    this -> value = raw;
+    value = raw;
 }
 
-int Fixed::toInt( void ) const {
-    return (this -> value >> this -> frac_bits);
+int Fixed::toInt(void) const {
+    return (value >> frac_bits);
 }
 
-float   Fixed::toFloat( void ) const {
-    return (this -> value / (float)(1 << this -> frac_bits));
+float   Fixed::toFloat(void) const {
+    return (value / (float)(1 << frac_bits));
 }
 
 std::ostream&   operator<<(std::ostream &out, const Fixed& obj) {
