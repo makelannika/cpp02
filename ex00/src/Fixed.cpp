@@ -6,13 +6,13 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 14:15:47 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/25 02:12:31 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/06 10:46:05 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Fixed.hpp"
 
-const int Fixed::bits = 8;
+const int Fixed::frac_bits = 8;
 
 Fixed::Fixed() : value(0) {
     std::cout << "Default constructor called" << std::endl;
