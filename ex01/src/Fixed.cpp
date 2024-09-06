@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 22:37:30 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/26 00:41:40 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/06 11:19:45 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,12 +55,12 @@ void    Fixed::setRawBits(int const raw) {
     value = raw;
 }
 
-int Fixed::toInt(void) const {
-    return (value >> frac_bits);
-}
-
 float   Fixed::toFloat(void) const {
     return (value / (float)(1 << frac_bits));
+}
+
+int Fixed::toInt(void) const {
+    return (value >> frac_bits);
 }
 
 std::ostream&   operator<<(std::ostream &out, const Fixed& obj) {
