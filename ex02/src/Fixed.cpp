@@ -6,7 +6,7 @@
 /*   By: amakela <amakela@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 22:37:30 by amakela           #+#    #+#             */
-/*   Updated: 2024/08/26 00:42:44 by amakela          ###   ########.fr       */
+/*   Updated: 2024/09/06 13:46:09 by amakela          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,28 +91,28 @@ bool    Fixed::operator!=(const Fixed& obj) const {
     return (value != obj.getRawBits());
 }
 
-Fixed   Fixed::operator+(const Fixed& obj) {
+Fixed   Fixed::operator+(const Fixed& obj) const {
     Fixed   res;
 
     res.setRawBits(value + obj.getRawBits());
     return (res);
 }
 
-Fixed   Fixed::operator-(const Fixed& obj) {
+Fixed   Fixed::operator-(const Fixed& obj) const {
     Fixed   res;
 
     res.setRawBits(value - obj.getRawBits());
     return (res);
 }
 
-Fixed   Fixed::operator*(const Fixed& obj) {
+Fixed   Fixed::operator*(const Fixed& obj) const {
     Fixed   res;
 
     res.setRawBits((value * obj.getRawBits()) >> 8);
     return (res);
 }
 
-Fixed   Fixed::operator/(const Fixed& obj) {
+Fixed   Fixed::operator/(const Fixed& obj) const {
     Fixed   res;
 
     if (obj.getRawBits() == 0) {
